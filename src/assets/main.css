@@ -30,3 +30,11 @@
 .string {
     color: #a31515;
 }
+
+.comment {
+    color: green;
+}
+
+.emphasis {
+    color: #006881;
+}

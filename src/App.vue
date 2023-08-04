@@ -3,6 +3,7 @@
     <div class="menu">
       <RouterLink to="/">hello world</RouterLink>
       <RouterLink to="/variable">variable</RouterLink>
+      <RouterLink to="/type">type</RouterLink>
     </div>
     <div class="vertical-line"></div>
     <RouterView class="content" />
