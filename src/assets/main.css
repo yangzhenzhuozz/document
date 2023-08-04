@@ -1,0 +1,32 @@
+.code-area {
+    background-color: #f2f2f2;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px 10px;
+}
+
+.code-header {
+    background-color: #e8e6df;
+}
+
+.code-header>* {
+    padding: 2px 16px;
+    color: #161616;
+}
+
+.console {
+    background-color: black;
+    color: white;
+}
+
+.key-word {
+    color: #0101fd;
+}
+
+.variable {
+    color: #006881;
+}
+
+.string {
+    color: #a31515;
+}
