@@ -23,14 +23,14 @@
     <div class="code-area">
       <code>
         <div>
-          <span class="key-word">var</span> <span class="variable">a</span>=1;
+          <span class="key-word">var </span> <span class="variable">a</span>=1;
         </div>
         <div>
-          <span class="key-word">var</span>
+          <span class="key-word">var </span>
           <span class="variable">a</span>:<span class="key-word">int</span>=1;
         </div>
         <div>
-          <span class="key-word">var</span>
+          <span class="key-word">var </span>
           <span class="variable">a</span>:<span class="key-word">int</span>;
         </div>
       </code>
