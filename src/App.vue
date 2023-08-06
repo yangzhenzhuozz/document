@@ -4,16 +4,19 @@
       <RouterLink to="/">hello world</RouterLink>
       <RouterLink to="/variable">variable</RouterLink>
       <RouterLink to="/type">type</RouterLink>
+      <RouterLink to="/todo">todo</RouterLink>
     </div>
     <div class="vertical-line"></div>
-    <RouterView class="content" />
+    <div class="content">
+      <RouterView />
+    </div>
   </div>
 </template>
 <style scoped>
 .mainPage {
   display: flex;
 }
-.content{
+.content {
   flex-grow: 1;
 }
 .menu {
@@ -21,9 +24,4 @@
   flex-direction: column;
 }
 
-.vertical-line {
-  width: 1px;
-  background-color: red;
-  margin: 0 5px;
-}
 </style>
