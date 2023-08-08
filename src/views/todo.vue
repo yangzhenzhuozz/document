@@ -4,4 +4,9 @@
   还要说明object和null<br />
   扩展函数(值类型扩展和引用类型扩展,不能扩展操作符)<br />
   闭包<br />
+  get set<br />
+  作用域<br />
+  switch自带break<br />
+  <br />
+  <br />
 </template>
