@@ -275,7 +275,7 @@
   </div>
   <div>函数的定义语法为:</div>
   <div>
-    ([id:type],[id:type])=>retType,需要注意的是这里的各个id必须不同,但是和原函数的参数名不需要对应(id只是一个占位符)
+    ([id:type][,id:type])=>retType,需要注意的是这里的各个id必须不同,但是和原函数的参数名不需要对应(id只是一个占位符)
   </div>
   <div>下面是一些示例代码</div>
   <div class="code-area" style="display: inline-block; border: solid 1px">
@@ -324,9 +324,10 @@ function写法就是lambda表达式的语法糖
         &nbsp;&nbsp;<span class="key-word">var</span> f3:(x:<span
           class="key-word"
           >int</span
-        >,y:<span class="key-word">int</span>)=add;<span class="comment"
+        >,y:<span class="key-word">int</span>)=>int;<span class="comment"
           >//本来想做成f3:(int,int)=>int;这种语法的,这里的x,y只是一个占位符,没实际意义</span
         >
+      <div>&nbsp;&nbsp;f3=add;</div>
       </div>
       <div>&nbsp;&nbsp;f3(3,4);</div>
       <div>};</div>
