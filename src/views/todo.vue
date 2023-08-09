@@ -7,6 +7,6 @@
   get set<br />
   作用域<br />
   switch自带break<br />
-  <br />
+  闭包,扩展函数导致的闭包<br />
   <br />
 </template>
