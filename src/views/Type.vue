@@ -327,7 +327,7 @@ function写法就是lambda表达式的语法糖
         >,y:<span class="key-word">int</span>)=>int;<span class="comment"
           >//本来想做成f3:(int,int)=>int;这种语法的,这里的x,y只是一个占位符,没实际意义</span
         >
-      <div>&nbsp;&nbsp;=add;</div>
+      <div>&nbsp;&nbsp;f3=add;</div>
       </div>
       <div>&nbsp;&nbsp;f3(3,4);</div>
       <div>};</div>
