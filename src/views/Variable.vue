@@ -1,5 +1,5 @@
 <template>
-  <div>变量声明:</div>
+  <h1>变量声明:</h1>
   <div class="code-area">
     <code>
       <div>
@@ -50,4 +50,10 @@
     每个变量都必须指明其是可修改<span class="key-word">var</span
     >(variable的缩写)还是不可修改<span class="key-word">val</span>(value的缩写)
   </p>
+  <h1>默认值</h1>
+  <div>
+    如果一个变量声明时只指定了类型,而没有指定其初始值,则为其设置一个默认值
+  </div>
+  <div>对于值类型来(bool,byte,short,int等),会将其设置为0</div>
+  <div>对于引用类型,则将其设置为null</div>
 </template>

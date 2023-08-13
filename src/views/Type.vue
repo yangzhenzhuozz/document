@@ -10,7 +10,7 @@
     ><br />所有的<em class="emphasis">数组</em>和<em class="emphasis">函数</em
     >都是引用类型
   </p>
-  <p>值类型和引用类型:</p>
+  <h1>值类型和引用类型:</h1>
   <p>值类型的定义方式为:</p>
   <div class="code-area">
     <code>
@@ -239,7 +239,7 @@
     </tbody>
   </table>
   <br />
-  <p>数组:</p>
+  <h1>数组:</h1>
   <div>
     数组类型声明语法如下: <span class="key-word">type</span>[],如<span
       class="key-word"
@@ -265,7 +265,47 @@
       >int</span
     >
   </div>
-  <p>函数:</p>
+  <h1>函数:</h1>
+  <p>函数的定义语法为:</p>
+  <div class="code-area">
+    <code>
+      <div>
+        <span class="key-word">function</span>
+        <span class="variable"> name</span>(id:<span class="key-word">type</span
+        >[,other_argument_list])[:<span class="key-word">retType</span>]{
+      </div>
+      <div>&nbsp;&nbsp;xxxx</div>
+      <div>}</div>
+    </code>
+  </div>
+  <p>
+    如果函数能推导出返回值类型,则不必声明返回值类型,但是有时候无法推导返回值类型,则必须定义其返回值类型,比如如下的递归函数无法推导返回值类型
+  </p>
+  <div class="code-area">
+    <code>
+      <div>
+        <span class="key-word">var</span> flag:<span class="key-word">bool</span
+        >;
+      </div>
+      <div><span class="key-word">function</span> foo(){</div>
+      <div>
+        &nbsp;&nbsp;<span class="key-word">var</span> a=foo();<span
+          class="comment"
+          >//问题出在这一行,此时推导函数foo的返回值类型又会陷入新的推导,如果删除这一行就行了,ty的类型推导还是让我比较满意的</span
+        >
+      </div>
+      <div>&nbsp;&nbsp;<span class="key-word">if</span>(flag)</div>
+      <div>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="key-word">return</span> foo();
+      </div>
+      <div>&nbsp;&nbsp;<span class="key-word">else</span></div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key-word">return</span> 0;</div>
+      <div>};</div>
+    </code>
+  </div>
+  <p>
+    这个函数始终返回0,但是编译器编译的时候会尝试解析else分支中对foo的调用,并将其返回值类型作为外层foo的返回值类型,这样就陷入递归类型推导,所以递归函数必须声明返回值可惜,比如这种写法就是正确的
+  </p>
   <div>
     在ty中,一切皆对象,所以函数也是一个对象,例如hello
     world的示例代码中,就是定义了一个对象main,这个main对象的类型为:()=><span
@@ -273,7 +313,7 @@
       >void</span
     >
   </div>
-  <div>函数的定义语法为:</div>
+  <div>函数类型的定义语法为:</div>
   <div>
     ([id:type][,id:type])=>retType,需要注意的是这里的各个id必须不同,但是和原函数的参数名不需要对应(id只是一个占位符)
   </div>
@@ -302,7 +342,8 @@
       </div>
       <div>&nbsp;&nbsp;<span class="key-word">return</span> a+b;</div>
       <div>};</div>
-      <pre class="comment">/*
+      <pre class="comment">
+/*
 这里的add和add2没有本质区别,可以认为
 function add(a:int,b:int){
     return a+b;
@@ -324,10 +365,11 @@ function写法就是lambda表达式的语法糖
         &nbsp;&nbsp;<span class="key-word">var</span> f3:(x:<span
           class="key-word"
           >int</span
-        >,y:<span class="key-word">int</span>)=>int;<span class="comment"
-          >//本来想做成f3:(int,int)=>int;这种语法的,这里的x,y只是一个占位符,没实际意义</span
+        >,y:<span class="key-word">int</span>)=><span class="key-word">int</span
+        ><span class="comment"
+          >//这里的x,y只是一个占位符,没实际意义,即可以用任意id替换x、y</span
         >
-      <div>&nbsp;&nbsp;f3=add;</div>
+        <div>&nbsp;&nbsp;f3=add;</div>
       </div>
       <div>&nbsp;&nbsp;f3(3,4);</div>
       <div>};</div>
