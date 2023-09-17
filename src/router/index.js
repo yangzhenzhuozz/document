@@ -7,7 +7,8 @@ import Operator from '../views/Operator.vue'
 import MagicClass from '../views/MagicClass.vue'
 import NameSpace from '../views/NameSpace.vue'
 import TypeCast from '../views/TypeCast.vue'
-import ExtensionMethod from '../views/ExtensionMethod.vue'
+import MemberFunctionExtensionMethod from '../views/MemberFunctionExtensionMethod.vue'
+import Closure from '../views/Closure.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -53,9 +54,14 @@ const router = createRouter({
       component: todo
     },
     {
-      path: '/extensionmethod',
-      name: 'extensionmethod',
-      component: ExtensionMethod
+      path: '/memberfunctionextensionmethod',
+      name: 'memberfunctionextensionmethod',
+      component: MemberFunctionExtensionMethod
+    },
+    {
+      path: '/closure',
+      name: 'closure',
+      component: Closure
     }
   ]
 })
