@@ -1,16 +1,18 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HelloWorldVue from '../views/HelloWorld.vue'
-import Variable from '../views/Variable.vue'
-import Type from '../views/Type.vue'
-import todo from '../views/todo.vue'
-import Operator from '../views/Operator.vue'
-import MagicClass from '../views/MagicClass.vue'
-import NameSpace from '../views/NameSpace.vue'
-import TypeCast from '../views/TypeCast.vue'
-import MemberFunctionExtensionMethod from '../views/MemberFunctionExtensionMethod.vue'
-import Closure from '../views/Closure.vue'
-import Exception from '../views/Exception.vue'
-import Autounwinded from '../views/Autounwinded.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import HelloWorldVue from '../views/HelloWorld.vue';
+import Variable from '../views/Variable.vue';
+import Type from '../views/Type.vue';
+import todo from '../views/todo.vue';
+import Operator from '../views/Operator.vue';
+import MagicClass from '../views/MagicClass.vue';
+import NameSpace from '../views/NameSpace.vue';
+import TypeCast from '../views/TypeCast.vue';
+import MemberFunctionExtensionMethod from '../views/MemberFunctionExtensionMethod.vue';
+import Closure from '../views/Closure.vue';
+import Exception from '../views/Exception.vue';
+import Autounwinded from '../views/Autounwinded.vue';
+import Scope from '../views/Scope.vue';
+import Switch from '../views/Switch.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -74,6 +76,16 @@ const router = createRouter({
       path: '/autounwinded',
       name: 'autounwinded',
       component: Autounwinded
+    },
+    {
+      path: '/scope',
+      name: 'scope',
+      component: Scope
+    },
+    {
+      path: '/switch',
+      name: 'switch',
+      component: Switch
     }
   ]
 })

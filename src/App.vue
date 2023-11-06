@@ -12,6 +12,8 @@
       <RouterLink to="/memberfunctionextensionmethod">扩展和成员函数</RouterLink>
       <RouterLink to="/exception">异常</RouterLink>
       <RouterLink to="/autounwinded">autounwinded</RouterLink>
+      <RouterLink to="/scope">作用域</RouterLink>
+      <RouterLink to="/switch">Switch</RouterLink>
       <RouterLink to="/todo">todo</RouterLink>
     </div>
     <div class="vertical-line"></div>

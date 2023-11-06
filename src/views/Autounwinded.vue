@@ -44,5 +44,5 @@
       </div>
     </code>
   </div>
-  <p>当上述代码遇到异常时,假设在第二个autounwinding clause中,初始化obj1成功了,但是在初始化obj2的时候异常,这时候只会调用obj1的unwinded</p>
+  <p>当上述代码遇到异常时,假设在第二个autounwinding clause中,初始化obj1成功了,但是在初始化obj2的时候异常,这时候只会调用obj1的unwinded,这和其他语言一样</p>
 </template>
