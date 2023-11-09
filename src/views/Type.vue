@@ -21,7 +21,7 @@
         {
       </div>
       <div>&nbsp;&nbsp;xxxx</div>
-      <div>};</div>
+      <div>}</div>
     </code>
   </div>
   <p>引用类型的定义方式为:</p>
@@ -33,7 +33,7 @@
         {
       </div>
       <div>&nbsp;&nbsp;xxxx</div>
-      <div>};</div>
+      <div>}</div>
     </code>
   </div>
   <p>值类型和引用类型的区别:</p>
@@ -57,7 +57,7 @@
           >long</span
         >;
       </div>
-      <div>};</div>
+      <div>}</div>
     </code>
     <code>
       <div>
@@ -78,7 +78,7 @@
           >long</span
         >;
       </div>
-      <div>};</div>
+      <div>}</div>
     </code>
   </div>
   <p>假设使用到上面两个class的地方如下:</p>
@@ -96,7 +96,7 @@
             >foo_refernce</span
           >;
         </div>
-        <div>};</div>
+        <div>}</div>
       </code>
     </div>
     <div
@@ -115,7 +115,7 @@
             >foo_value</span
           >;
         </div>
-        <div>};</div>
+        <div>}</div>
       </code>
     </div>
   </div>

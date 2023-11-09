@@ -45,19 +45,45 @@
   <p>如果我们执行这样的代码</p>
   <div class="code-area">
     <code>
-      <div><span class="key-word">var</span> foo=outter(1);<span class="comment">//得到一个函数</span></div>
-      <div><span class="key-word">var</span> value=foo(3);<span class="comment">//调用函数，此时value=1+2+3</span></div>
+      <div>
+        <span class="key-word">var</span> foo=outter(1);<span class="comment"
+          >//得到一个函数</span
+        >
+      </div>
+      <div>
+        <span class="key-word">var</span> value=foo(3);<span class="comment"
+          >//调用函数，此时value=1+2+3</span
+        >
+      </div>
     </code>
   </div>
-  <p>编译器会自动判断那些局部变量被闭包捕获，然后使这些局部变量脱离原来的作用域，并且把新的作用域绑定到闭包上面。</p>
+  <p>
+    编译器会自动判断那些局部变量被闭包捕获，然后使这些局部变量脱离原来的作用域，并且把新的作用域绑定到闭包上面。
+  </p>
   <h1>被捕获变量和闭包函数局部变量的区别</h1>
-  <p>被闭包捕获的变量会和这个闭包函数一起存在，而闭包函数内部的局部变量只有代码执行到的时候才存在，见下面代码</p>
+  <p>
+    被闭包捕获的变量会和这个闭包函数一起存在，而闭包函数内部的局部变量只有代码执行到的时候才存在，见下面代码
+  </p>
   <div class="code-area">
     <code>
-      <div><span class="key-word">var</span> foo=outter(1);<span class="comment">//得到一个函数</span></div>
-      <div><span class="key-word">var</span> value=foo(3);<span class="comment">//调用函数，此时value=1+2+3</span></div>
-      <div><span class="key-word">var</span> value=foo(4);<span class="comment">//调用函数，此时value=1+2+4</span></div>
+      <div>
+        <span class="key-word">var</span> foo=outter(1);<span class="comment"
+          >//得到一个函数</span
+        >
+      </div>
+      <div>
+        <span class="key-word">var</span> value=foo(3);<span class="comment"
+          >//调用函数，此时value=1+2+3</span
+        >
+      </div>
+      <div>
+        <span class="key-word">var</span> value=foo(4);<span class="comment"
+          >//调用函数，此时value=1+2+4</span
+        >
+      </div>
     </code>
   </div>
-  <p>可以看到，我们创建了一个函数foo之后，这个函数捕获了两个变量a、b，其值分别为1,2，那么每次调用foo的时候，这两个被捕获的变量的值都跟着函数实例foo存在，而局部变量c则是随着传递进去的参数不同而不同</p>
+  <p>
+    可以看到，我们创建了一个函数foo之后，这个函数捕获了两个变量a、b，其值分别为1,2，那么每次调用foo的时候，这两个被捕获的变量的值都跟着函数实例foo存在，而局部变量c则是随着传递进去的参数不同而不同
+  </p>
 </template>

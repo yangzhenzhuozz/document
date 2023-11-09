@@ -13,7 +13,9 @@
       <RouterLink to="/exception">异常</RouterLink>
       <RouterLink to="/autounwinded">autounwinded</RouterLink>
       <RouterLink to="/scope">作用域</RouterLink>
-      <RouterLink to="/switch">Switch</RouterLink>
+      <RouterLink to="/contorlflow">条件控制语句</RouterLink>
+      <RouterLink to="/gettersetter">getter&setter</RouterLink>
+      <RouterLink to="/template">模板</RouterLink>
       <RouterLink to="/todo">todo</RouterLink>
     </div>
     <div class="vertical-line"></div>
@@ -32,5 +34,6 @@
 .menu {
   display: flex;
   flex-direction: column;
+  min-width: 8rem;
 }
 </style>

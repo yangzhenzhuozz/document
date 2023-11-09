@@ -3,13 +3,13 @@
   <div class="code-area">
     <code>
       <div>
-        <span class="key-word">var</span>
+        <span class="key-word">var </span>
         <span class="variable">a</span>=1;<span class="comment">
           //声明一个可修改变量a,类型为system.int</span
         >
       </div>
       <div>
-        <span class="key-word">val</span>
+        <span class="key-word">val </span>
         <span class="variable">b</span>=1;<span class="comment">
           //声明一个不可修改变量b,类型为system.int</span
         >

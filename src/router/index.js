@@ -12,7 +12,9 @@ import Closure from '../views/Closure.vue';
 import Exception from '../views/Exception.vue';
 import Autounwinded from '../views/Autounwinded.vue';
 import Scope from '../views/Scope.vue';
-import Switch from '../views/Switch.vue';
+import ContorlFlow from '../views/ContorlFlow.vue';
+import GetterSetter from '../views/GetterSetter.vue';
+import Template from '../views/Template.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -83,9 +85,19 @@ const router = createRouter({
       component: Scope
     },
     {
-      path: '/switch',
-      name: 'switch',
-      component: Switch
+      path: '/contorlflow',
+      name: 'contorlflow',
+      component: ContorlFlow
+    },
+    {
+      path: '/gettersetter',
+      name: 'gettersetter',
+      component: GetterSetter
+    },
+    {
+      path: '/template',
+      name: 'template',
+      component: Template
     }
   ]
 })

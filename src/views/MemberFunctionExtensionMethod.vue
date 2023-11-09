@@ -4,7 +4,7 @@
   <div class="code-area">
     <code>
       <div>
-        <span class="key-word">extension function</span>
+        <span class="key-word">extension function </span>
         <span class="variable">name </span>(<span class="key-word"
           >this type</span
         >
@@ -35,7 +35,7 @@
         <span class="key-word">var</span> <span class="variable">a</span>=5;
       </div>
       <div>
-        <span class="key-word">var</span>
+        <span class="key-word">var </span>
         <span class="variable">f</span>=a.foo;<span class="comment"
           >//访问扩展函数，创建闭包</span
         >
@@ -43,7 +43,7 @@
       <div>f();<span class="comment">//返回6</span></div>
       <div>f();<span class="comment">//返回7</span></div>
       <div>
-        <span class="key-word">var</span>
+        <span class="key-word">var </span>
         <span class="variable">f</span>=a.foo;<span class="comment"
           >//重新访问扩展函数，创建闭包</span
         >
@@ -61,8 +61,8 @@
   <div class="code-area">
     <code>
       <div>
-        <span class="key-word">function</span>
-        <span class="variable">foo </span>(){
+        <span class="key-word">function </span>
+        <span class="variable">foo</span>(){
       </div>
       <div>&nbsp;&nbsp;<span class="key-word">var</span> a=5;</div>
       <div>
@@ -74,5 +74,7 @@
       <div>}</div>
     </code>
   </div>
-  <div>这里也只是顺便介绍一下，如果用户只是简单写写代码，不需要关心这些细节</div>
+  <div>
+    这里也只是顺便介绍一下，如果用户只是简单写写代码，不需要关心这些细节
+  </div>
 </template>
