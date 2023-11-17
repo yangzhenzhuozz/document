@@ -98,8 +98,8 @@
       <div>{</div>
       <div>
         &nbsp;&nbsp;<span class="key-word">for</span>(<span class="key-word"
-          >var </span
-        >
+          >var
+        </span>
         <span class="variable">a</span>=1;xxx;xxx){<span class="comment"
           >//这是为了让for定义的变量作用域被限定在for循环中</span
         >
@@ -107,6 +107,26 @@
       <div>
         &nbsp;&nbsp;&nbsp;&nbsp;<span class="key-word">var </span>
         <span class="variable">a</span>=1;
+      </div>
+      <div>&nbsp;&nbsp;}</div>
+      <div>}</div>
+    </code>
+  </div>
+  <h2>break、continue</h2>
+  <div>
+    ty的break只能用于中断for、while、do-while循环,相比其他C系语言少了对switch的跳出,所以break和continue能使用的位置是一样的,并且在循环的前面可以加标签,然后用break跳出这个标签或者continue到这个标签
+  </div>
+  <div class="code-area">
+    <code>
+      <div>
+        <span class="variable"> L0</span>:<span class="key-word">for</span>(;;)
+      </div>
+      <div>{</div>
+      <div>
+        &nbsp;&nbsp;<span class="key-word">for</span>(;;){
+      </div>
+      <div>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="key-word">break</span>/<span class="key-word">contine</span><span class="variable"> L0</span>;
       </div>
       <div>&nbsp;&nbsp;}</div>
       <div>}</div>
